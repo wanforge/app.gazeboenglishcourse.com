@@ -1,0 +1,15 @@
+{
+  "name": "LKP Gazebo English Course",
+  "short_name": "GAZEBO",
+  "description": "Kursus bahasa Inggris di Trenggalek untuk anak-anak, remaja, dan dewasa. Learn, Practice, Succeed!",
+  "lang": "id",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b3a63",
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

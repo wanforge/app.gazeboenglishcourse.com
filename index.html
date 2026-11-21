@@ -10,12 +10,29 @@
 <meta property="og:title" content="LKP Gazebo English Course — Learn, Practice, Succeed!">
 <meta property="og:description" content="Kursus bahasa Inggris di Trenggalek untuk semua kalangan, anak-anak hingga dewasa. Berprestasi Nasional 2017, Juara 1 Jawa Timur 2018.">
 <meta property="og:url" content="https://gazeboenglishcourse.com/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%230f4c81' d='M12 2 1 9h22L12 2z'/%3E%3Cpath fill='%23f2a007' d='M5 11v9h3v-9H5zm11 0v9h3v-9h-3zM3 20h18v2H3z'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<meta name="theme-color" content="#0b3a63">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="GAZEBO">
+<meta name="robots" content="index, follow">
+<meta property="og:image" content="https://gazeboenglishcourse.com/assets/og-image.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="id_ID">
+<meta property="og:site_name" content="LKP Gazebo English Course">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LKP Gazebo English Course — Learn, Practice, Succeed!">
+<meta name="twitter:description" content="Kursus bahasa Inggris di Trenggalek untuk semua kalangan, anak-anak hingga dewasa. Berprestasi Nasional 2017, Juara 1 Jawa Timur 2018.">
+<meta name="twitter:image" content="https://gazeboenglishcourse.com/assets/og-image.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LanguageSchool","name":"LKP Gazebo English Course","slogan":"Learn, Practice, Succeed!","url":"https://gazeboenglishcourse.com/","email":"gazeboenglishcourse@gmail.com","telephone":"+62-852-3599-0100","address":{"@type":"PostalAddress","streetAddress":"Jl. Mayjen Sungikono No. 18","addressLocality":"Trenggalek","addressRegion":"Jawa Timur","postalCode":"66311","addressCountry":"ID"},"openingHours":"Mo-Su 09:00-17:00","identifier":"NPSN K5660488"}
+{"@context":"https://schema.org","@type":"LanguageSchool","name":"LKP Gazebo English Course","slogan":"Learn, Practice, Succeed!","url":"https://gazeboenglishcourse.com/","email":"gazeboenglishcourse@gmail.com","telephone":"+62-852-3599-0100","address":{"@type":"PostalAddress","streetAddress":"Jl. Mayjen Sungikono No. 18","addressLocality":"Trenggalek","addressRegion":"Jawa Timur","postalCode":"66311","addressCountry":"ID"},"openingHours":"Mo-Su 09:00-17:00","identifier":"NPSN K5660488","logo":"https://gazeboenglishcourse.com/assets/logo-color.svg","image":"https://gazeboenglishcourse.com/assets/og-image.svg","geo":{"@type":"GeoCoordinates","latitude":-8.055154,"longitude":111.702246},"sameAs":["https://www.instagram.com/gazeboenglishcourse"],"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"17:00"},"areaServed":"Trenggalek"}
 </script>
 <style>
 :root{
@@ -46,6 +63,11 @@ p{text-wrap:pretty}
 header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 header.site .wrap{display:flex;align-items:center;gap:14px;padding-top:10px;padding-bottom:10px}
 .brand{display:flex;align-items:center;gap:11px;color:var(--navy-dark)}
+.brand img.logo-img{height:49px;width:auto;display:block}
+.social-row{display:flex;gap:10px;margin:2px 0 16px}
+.social-row .soc{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center;color:#fff}
+.social-row .soc:hover{background:rgba(255,255,255,.12);color:#fff}
+.social-row .soc svg{width:20px;height:20px}
 .brand .mark{width:46px;height:46px;flex:none}
 .brand-text{line-height:1.12;white-space:nowrap}
 .brand-text b{display:block;font-size:1.3rem;font-weight:800;letter-spacing:.06em}
@@ -204,6 +226,7 @@ footer.site p{font-size:.9rem}
   .grid-3,.grid-2,.contact-grid,.steps{grid-template-columns:1fr}
   .stats-band{grid-template-columns:repeat(2,1fr);padding:28px 22px}
   .tab-panel.active{grid-template-columns:1fr}
+  .brand img.logo-img{height:42px}
   .brand-text b{font-size:1.12rem}
   body{padding-bottom:64px}
   .bottombar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(15,76,129,.1)}
@@ -233,8 +256,7 @@ footer.site p{font-size:.9rem}
 <header class="site">
   <div class="wrap">
     <a class="brand" href="#beranda" aria-label="LKP Gazebo English Course">
-      <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#0f4c81" d="M12 1.5 1 8.5h22L12 1.5z"/><path fill="#f2a007" d="M5 10.5V20h2.6v-9.5H5zm11.4 0V20H19v-9.5h-2.6zM3 20h18v2.2H3z"/><rect x="10.2" y="10.5" width="3.6" height="9.5" fill="#0f4c81"/></svg>
-      <span class="brand-text"><b>GAZEBO</b><span>English Course · Trenggalek</span></span>
+      <img class="logo-img" src="assets/logo-color.svg" alt="Logo LKP Gazebo English Course" width="157" height="49">
     </a>
     <nav class="main" aria-label="Menu utama">
       <a href="#beranda">Beranda</a>
@@ -516,9 +538,13 @@ footer.site p{font-size:.9rem}
     <div class="foot-grid">
       <div>
         <a class="brand" href="#beranda" style="margin-bottom:14px">
-          <svg class="mark" viewBox="0 0 24 24" aria-hidden="true" style="background:#fff;border-radius:10px;padding:5px"><path fill="#0f4c81" d="M12 1.5 1 8.5h22L12 1.5z"/><path fill="#f2a007" d="M5 10.5V20h2.6v-9.5H5zm11.4 0V20H19v-9.5h-2.6zM3 20h18v2.2H3z"/><rect x="10.2" y="10.5" width="3.6" height="9.5" fill="#0f4c81"/></svg>
-          <span class="brand-text" style="color:#fff"><b>GAZEBO</b><span style="color:#9dbdd6">English Course · Trenggalek</span></span>
+          <img class="logo-img light" src="assets/logo-white.svg" alt="Logo LKP Gazebo English Course" width="157" height="49">
         </a>
+        <div class="social-row">
+          <a class="soc" href="https://www.instagram.com/gazeboenglishcourse" target="_blank" rel="noopener" aria-label="Instagram Gazebo English Course"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+          <a class="soc" href="https://wa.me/6285235990100" target="_blank" rel="noopener" aria-label="WhatsApp Gazebo English Course"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a>
+          <a class="soc" href="mailto:gazeboenglishcourse@gmail.com" aria-label="Email Gazebo English Course"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
+        </div>
         <p>LKP Gazebo English Course — lembaga kursus bahasa Inggris di Trenggalek untuk anak-anak, remaja, dan dewasa. <em>Learn, Practice, Succeed!</em></p>
       </div>
       <div>
@@ -576,6 +602,13 @@ tabBtns.forEach(function(btn){btn.addEventListener('click',function(){
   btn.setAttribute('aria-selected','true');
   panels[parseInt(btn.getAttribute('data-tab'),10)].classList.add('active');
 });});
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js').catch(function () {});
+  });
+}
 </script>
 </body>
 </html>
