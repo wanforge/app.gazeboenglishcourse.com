@@ -235,6 +235,42 @@ footer.site p{font-size:.9rem}
   .bottombar a.primary{color:var(--navy)}
   .bottombar a.wa{color:#1c7a44}
 }
+
+@media (max-width:760px){
+  section{padding:44px 0}
+  /* Program & Prestasi: geser menyamping, tidak menumpuk */
+  .grid-3{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -20px;padding:6px 20px 16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .grid-3::-webkit-scrollbar{display:none}
+  .grid-3>*{flex:0 0 85%;scroll-snap-align:start;min-width:0}
+  .prog,.award{padding:22px 20px}
+  /* Strip poin hero: 2x2 rapi */
+  .strip .wrap{display:grid;grid-template-columns:1fr 1fr;gap:12px 14px;padding-top:16px;padding-bottom:16px}
+  .strip .item{font-size:.85rem}
+  /* Statistik: angka lebih kecil agar tidak bertabrakan */
+  .stats-band{gap:18px 14px;padding:24px 20px}
+  .stats-band .st b{font-size:1.38rem;letter-spacing:-.01em}
+  .stats-band .st span{font-size:.85rem}
+  /* Prestasi: ikut digeser menyamping */
+  #prestasi .grid-2{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -20px;padding:6px 20px 16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  #prestasi .grid-2::-webkit-scrollbar{display:none}
+  #prestasi .grid-2>*{flex:0 0 85%;scroll-snap-align:start;min-width:0}
+  /* Tab keunggulan: satu baris bisa digeser */
+  .tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 22px;padding:2px 20px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab-btn{flex:none}
+  /* Langkah daftar: baris menyamping ringkas */
+  .step{display:flex;gap:14px;align-items:flex-start;padding:20px}
+  .step .num{flex:none;margin-bottom:0}
+  /* Kartu kontak: ikon di kiri, teks di kanan */
+  .contact-grid{gap:14px}
+  .contact-card{display:grid;grid-template-columns:46px 1fr;column-gap:14px;padding:20px;align-items:start}
+  .contact-card .ic{grid-row:1/5;margin-bottom:0}
+  .contact-card h3,.contact-card p,.contact-card a{grid-column:2}
+  /* Footer: merek selebar layar, tautan dua kolom */
+  .foot-grid{grid-template-columns:1fr 1fr;gap:26px 20px}
+  .foot-grid>*:first-child{grid-column:1/-1}
+  .foot-grid>*:last-child{grid-column:1/-1}
+}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
@@ -415,7 +451,7 @@ footer.site p{font-size:.9rem}
     <div class="stats-band">
       <div class="st"><b>11</b><span>Tutor &amp; pengajar</span></div>
       <div class="st"><b>8</b><span>Rombongan belajar</span></div>
-      <div class="st"><b>2017<span class="u">·</span>2018</b><span>Penghargaan nasional &amp; provinsi</span></div>
+      <div class="st"><b>2017 <span class="u">&amp;</span> 2018</b><span>Penghargaan nasional &amp; provinsi</span></div>
       <div class="st"><b>09.00–17.00</b><span>Buka setiap hari</span></div>
     </div>
   </div>
