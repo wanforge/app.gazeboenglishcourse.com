@@ -13,7 +13,7 @@ Program kursus bahasa Inggris untuk semua kalangan, mulai dari anak-anak hingga 
 
 ## Kontak
 
-- Alamat: Jl. Mayjen Sungikono No. 18, Trenggalek, Jawa Timur 66311
+- Alamat: Jl. Mayjen Sungkono No. 18, Trenggalek, Jawa Timur 66311
 - Telepon/WA: 0852-3599-0100
 - Email: gazeboenglishcourse@gmail.com
 - Instagram: @gazeboenglishcourse

@@ -32,7 +32,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LanguageSchool","name":"LKP Gazebo English Course","slogan":"Learn, Practice, Succeed!","url":"https://gazeboenglishcourse.com/","email":"gazeboenglishcourse@gmail.com","telephone":"+62-852-3599-0100","address":{"@type":"PostalAddress","streetAddress":"Jl. Mayjen Sungikono No. 18","addressLocality":"Trenggalek","addressRegion":"Jawa Timur","postalCode":"66311","addressCountry":"ID"},"openingHours":"Mo-Su 09:00-17:00","identifier":"NPSN K5660488","logo":"https://gazeboenglishcourse.com/assets/icon-mark.svg","image":"https://gazeboenglishcourse.com/assets/og-image.svg","geo":{"@type":"GeoCoordinates","latitude":-8.055154,"longitude":111.702246},"sameAs":["https://www.instagram.com/gazeboenglishcourse"],"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"17:00"},"areaServed":"Trenggalek"}
+{"@context":"https://schema.org","@type":"LanguageSchool","name":"LKP Gazebo English Course","slogan":"Learn, Practice, Succeed!","url":"https://gazeboenglishcourse.com/","email":"gazeboenglishcourse@gmail.com","telephone":"+62-852-3599-0100","address":{"@type":"PostalAddress","streetAddress":"Jl. Mayjen Sungkono No. 18","addressLocality":"Trenggalek","addressRegion":"Jawa Timur","postalCode":"66311","addressCountry":"ID"},"openingHours":"Mo-Su 09:00-17:00","identifier":"NPSN K5660488","logo":"https://gazeboenglishcourse.com/assets/icon-mark.svg","image":"https://gazeboenglishcourse.com/assets/og-image.svg","geo":{"@type":"GeoCoordinates","latitude":-8.055154,"longitude":111.702246},"sameAs":["https://www.instagram.com/gazeboenglishcourse"],"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"17:00"},"areaServed":"Trenggalek"}
 </script>
 <style>
 :root{
@@ -258,18 +258,33 @@ footer.site p{font-size:.9rem}
   .tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 22px;padding:2px 20px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .tabs::-webkit-scrollbar{display:none}
   .tab-btn{flex:none}
-  /* Langkah daftar: baris menyamping ringkas */
-  .step{display:flex;gap:14px;align-items:flex-start;padding:20px}
-  .step .num{flex:none;margin-bottom:0}
-  /* Kartu kontak: ikon di kiri, teks di kanan */
+  /* Langkah daftar: nomor di kiri, judul + teks menumpuk di kanan */
+  .step{display:grid;grid-template-columns:40px 1fr;column-gap:14px;padding:20px;align-items:start}
+  .step .num{grid-row:1/3;margin-bottom:0}
+  .step h3{grid-column:2}
+  .step p{grid-column:2}
+  /* Kolom teks di dalam baris flex boleh menyusut, jangan memaksa kartu melebar */
+  .level-row>div,.award>div,.fact-list li>div{min-width:0}
+  /* Kartu kontak: email panjang boleh patah baris, jangan meluber keluar kartu */
   .contact-grid{gap:14px}
   .contact-card{display:grid;grid-template-columns:46px 1fr;column-gap:14px;padding:20px;align-items:start}
+  .contact-card>*{min-width:0}
+  .contact-card a{overflow-wrap:anywhere;word-break:break-word;font-size:.85rem}
   .contact-card .ic{grid-row:1/5;margin-bottom:0}
   .contact-card h3,.contact-card p,.contact-card a{grid-column:2}
   /* Footer: merek selebar layar, tautan dua kolom */
   .foot-grid{grid-template-columns:1fr 1fr;gap:26px 20px}
   .foot-grid>*:first-child{grid-column:1/-1}
   .foot-grid>*:last-child{grid-column:1/-1}
+}
+@media (max-width:360px){
+  /* HP sangat sempit (320px): rapatkan merek header supaya tombol menu tidak terdorong keluar layar */
+  header.site .wrap{gap:8px}
+  .brand{gap:8px}
+  .brand img.mark-img{height:38px;width:38px}
+  .brand-text b{font-size:1.05rem}
+  .brand-text span{font-size:.6rem;letter-spacing:.07em}
+  .burger{width:40px;height:40px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -281,7 +296,7 @@ footer.site p{font-size:.9rem}
 
 <div class="topbar">
   <div class="wrap">
-    <span class="tb-item tb-addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Jl. Mayjen Sungikono No. 18, Trenggalek, Jawa Timur</span>
+    <span class="tb-item tb-addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Jl. Mayjen Sungkono No. 18, Trenggalek, Jawa Timur</span>
     <div class="tb-right">
       <span class="tb-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Setiap Hari 09.00–17.00 WIB</span>
       <a class="tb-item" href="tel:+6285235990100"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>0852-3599-0100</a>
@@ -524,7 +539,7 @@ footer.site p{font-size:.9rem}
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg><div><b>Lembaga Terdaftar Resmi</b><span>LKP swasta terdaftar dengan NPSN K5660488, Kecamatan Trenggalek.</span></div></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg><div><b>11 Tutor, 8 Rombongan Belajar</b><span>Tim pengajar berpengalaman mendampingi kelas-kelas yang aktif berjalan.</span></div></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-3.5"/></svg><div><b>Untuk Semua Jenjang</b><span>Program anak, remaja, hingga dewasa — termasuk persiapan kompetisi.</span></div></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><div><b>Buka Setiap Hari</b><span>Pukul 09.00–17.00 WIB di Jl. Mayjen Sungikono No. 18, Trenggalek.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><div><b>Buka Setiap Hari</b><span>Pukul 09.00–17.00 WIB di Jl. Mayjen Sungkono No. 18, Trenggalek.</span></div></li>
       </ul>
     </div>
   </div>
@@ -542,7 +557,7 @@ footer.site p{font-size:.9rem}
       <div class="contact-card">
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
         <h3>Alamat</h3>
-        <p>Jl. Mayjen Sungikono No. 18, Trenggalek, Jawa Timur 66311</p>
+        <p>Jl. Mayjen Sungkono No. 18, Trenggalek, Jawa Timur 66311</p>
         <p style="margin-top:10px"><a href="https://www.google.com/maps/search/?api=1&query=Gazebo+English+Course+Trenggalek" target="_blank" rel="noopener"><strong>Lihat di Google Maps →</strong></a></p>
       </div>
       <div class="contact-card">
@@ -554,7 +569,7 @@ footer.site p{font-size:.9rem}
       <div class="contact-card">
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
         <h3>Email &amp; Media Sosial</h3>
-        <p><a href="mailto:gazeboenglishcourse@gmail.com"><strong>gazeboenglishcourse@gmail.com</strong></a></p>
+        <p><a href="mailto:gazeboenglishcourse@gmail.com"><strong>gazeboenglishcourse@<wbr>gmail.com</strong></a></p>
         <p style="margin-top:10px"><a href="https://www.instagram.com/gazeboenglishcourse" target="_blank" rel="noopener"><strong>Instagram @gazeboenglishcourse →</strong></a></p>
       </div>
     </div>
@@ -607,7 +622,7 @@ footer.site p{font-size:.9rem}
       <div>
         <h4>Kontak</h4>
         <ul>
-          <li>Jl. Mayjen Sungikono No. 18, Trenggalek, Jawa Timur 66311</li>
+          <li>Jl. Mayjen Sungkono No. 18, Trenggalek, Jawa Timur 66311</li>
           <li><a href="tel:+6285235990100">0852-3599-0100</a></li>
           <li><a href="mailto:gazeboenglishcourse@gmail.com">gazeboenglishcourse@gmail.com</a></li>
           <li><a href="https://www.instagram.com/gazeboenglishcourse" target="_blank" rel="noopener">Instagram @gazeboenglishcourse</a></li>
