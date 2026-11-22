@@ -1,4 +1,4 @@
-var CACHE = 'gazebo-v4';
+var CACHE = 'gazebo-v5';
 var PRECACHE = [
   '.',
   'index.html',
@@ -7,7 +7,11 @@ var PRECACHE = [
   'assets/icon-white.svg',
   'assets/favicon.svg',
   'assets/icon.svg',
-  'assets/og-image.svg'
+  'assets/og-image.svg',
+  'assets/og-image.png',
+  'assets/icon-192.png',
+  'assets/icon-512.png',
+  'assets/apple-touch-icon.png'
 ];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(PRECACHE); }).then(function () { return self.skipWaiting(); }));
