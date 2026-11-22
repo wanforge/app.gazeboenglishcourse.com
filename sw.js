@@ -1,10 +1,10 @@
-var CACHE = 'gazebo-v1';
+var CACHE = 'gazebo-v2';
 var PRECACHE = [
   '.',
   'index.html',
   'manifest.webmanifest',
-  'assets/logo-color.svg',
-  'assets/logo-white.svg',
+  'assets/icon-mark.svg',
+  'assets/icon-white.svg',
   'assets/favicon.svg',
   'assets/icon.svg',
   'assets/og-image.svg'

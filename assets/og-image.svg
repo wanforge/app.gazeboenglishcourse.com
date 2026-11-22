@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#0b3a63"/>
+  <rect width="1200" height="630" fill="#0A2A6B"/>
   <style>
     .mark * { fill: #ffffff !important; }
     text { font-family: Arial, sans-serif; }
@@ -27,7 +27,7 @@
   </path>
 </g>
   <text x="520" y="268" font-size="64" font-weight="800" fill="#ffffff">GAZEBO</text>
-  <text x="520" y="322" font-size="34" font-weight="700" letter-spacing="6" fill="#9dbdd6">ENGLISH COURSE</text>
+  <text x="520" y="322" font-size="34" font-weight="700" letter-spacing="6" fill="#A9BEEA">ENGLISH COURSE</text>
   <text x="520" y="392" font-size="30" fill="#d6e8f5">Kursus Bahasa Inggris di Trenggalek</text>
   <text x="520" y="440" font-size="30" font-weight="700" fill="#f2a007">Learn, Practice, Succeed!</text>
 </svg>

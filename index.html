@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://gazeboenglishcourse.com/">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="apple-touch-icon" href="assets/favicon.svg">
-<meta name="theme-color" content="#0b3a63">
+<meta name="theme-color" content="#0A2A6B">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -32,13 +32,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LanguageSchool","name":"LKP Gazebo English Course","slogan":"Learn, Practice, Succeed!","url":"https://gazeboenglishcourse.com/","email":"gazeboenglishcourse@gmail.com","telephone":"+62-852-3599-0100","address":{"@type":"PostalAddress","streetAddress":"Jl. Mayjen Sungikono No. 18","addressLocality":"Trenggalek","addressRegion":"Jawa Timur","postalCode":"66311","addressCountry":"ID"},"openingHours":"Mo-Su 09:00-17:00","identifier":"NPSN K5660488","logo":"https://gazeboenglishcourse.com/assets/logo-color.svg","image":"https://gazeboenglishcourse.com/assets/og-image.svg","geo":{"@type":"GeoCoordinates","latitude":-8.055154,"longitude":111.702246},"sameAs":["https://www.instagram.com/gazeboenglishcourse"],"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"17:00"},"areaServed":"Trenggalek"}
+{"@context":"https://schema.org","@type":"LanguageSchool","name":"LKP Gazebo English Course","slogan":"Learn, Practice, Succeed!","url":"https://gazeboenglishcourse.com/","email":"gazeboenglishcourse@gmail.com","telephone":"+62-852-3599-0100","address":{"@type":"PostalAddress","streetAddress":"Jl. Mayjen Sungikono No. 18","addressLocality":"Trenggalek","addressRegion":"Jawa Timur","postalCode":"66311","addressCountry":"ID"},"openingHours":"Mo-Su 09:00-17:00","identifier":"NPSN K5660488","logo":"https://gazeboenglishcourse.com/assets/icon-mark.svg","image":"https://gazeboenglishcourse.com/assets/og-image.svg","geo":{"@type":"GeoCoordinates","latitude":-8.055154,"longitude":111.702246},"sameAs":["https://www.instagram.com/gazeboenglishcourse"],"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"17:00"},"areaServed":"Trenggalek"}
 </script>
 <style>
 :root{
-  --navy:#0f4c81; --navy-dark:#0b3a63; --blue:#1773b8; --amber:#f2a007; --amber-dark:#d18d04;
-  --sky:#eaf3fa; --ink:#17323f; --muted:#56707e; --line:#dbe7ef; --bg:#f7fafc; --card:#fff;
-  --radius:18px; --shadow:0 10px 30px rgba(15,76,129,.09); --shadow-lg:0 24px 50px rgba(15,76,129,.17);
+  --navy:#093FB4; --navy-dark:#0A2A6B; --blue:#2E6BFF; --amber:#f2a007; --amber-dark:#d18d04;
+  --sky:#EEF2FE; --ink:#17323f; --muted:#56707e; --line:#DCE4F7; --bg:#f7fafc; --card:#fff;
+  --radius:18px; --shadow:0 10px 30px rgba(9,63,180,.09); --shadow-lg:0 24px 50px rgba(9,63,180,.17);
   --wrap:1180px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -46,13 +46,13 @@ html{scroll-behavior:smooth}
 body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
 a{color:var(--navy);text-decoration:none}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-:focus-visible{outline:3px solid #8fc3ea;outline-offset:2px;border-radius:6px}
+:focus-visible{outline:3px solid #8FA9F2;outline-offset:2px;border-radius:6px}
 ::selection{background:var(--navy);color:#fff}
 h1,h2,h3{text-wrap:balance;line-height:1.2;color:var(--navy-dark)}
 p{text-wrap:pretty}
 
 /* Topbar */
-.topbar{background:var(--navy-dark);color:#d6e8f5;font-size:.82rem}
+.topbar{background:var(--navy-dark);color:#D9E4FC;font-size:.82rem}
 .topbar .wrap{display:flex;align-items:center;gap:18px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
 .topbar a{color:#fff;font-weight:600}
 .tb-item{display:inline-flex;align-items:center;gap:7px}
@@ -63,7 +63,7 @@ p{text-wrap:pretty}
 header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 header.site .wrap{display:flex;align-items:center;gap:14px;padding-top:10px;padding-bottom:10px}
 .brand{display:flex;align-items:center;gap:11px;color:var(--navy-dark)}
-.brand img.logo-img{height:49px;width:auto;display:block}
+.brand img.mark-img{height:48px;width:48px;display:block;flex:none}
 .social-row{display:flex;gap:10px;margin:2px 0 16px}
 .social-row .soc{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center;color:#fff}
 .social-row .soc:hover{background:rgba(255,255,255,.12);color:#fff}
@@ -84,7 +84,7 @@ nav.main a:hover{color:var(--navy);background:var(--sky)}
 .btn-navy:hover{background:var(--navy-dark);color:#fff}
 .btn-white{background:#fff;color:var(--navy-dark)}
 .btn-white:hover{background:var(--sky);color:var(--navy-dark)}
-.btn-outline{border-color:#bcd4e6;color:var(--navy-dark);background:#fff}
+.btn-outline{border-color:#BCCDF5;color:var(--navy-dark);background:#fff}
 .btn-outline:hover{border-color:var(--navy);color:var(--navy)}
 .btn-sm{padding:9px 16px;font-size:.88rem;border-radius:10px}
 .nav-cta{margin-left:10px}
@@ -95,16 +95,16 @@ nav.main a:hover{color:var(--navy);background:var(--sky)}
 .mobile-menu.open{display:block}
 
 /* Hero */
-.hero{background:var(--navy-dark);color:#e8f2f9;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(640px 320px at 88% 0%,rgba(242,160,7,.16),transparent 60%),radial-gradient(560px 300px at 4% 100%,rgba(23,115,184,.35),transparent 60%)}
+.hero{background:var(--navy-dark);color:#EDF1FD;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(640px 320px at 88% 0%,rgba(242,160,7,.16),transparent 60%),radial-gradient(560px 300px at 4% 100%,rgba(46,107,255,.35),transparent 60%)}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1.12fr .88fr;gap:44px;align-items:center;padding-top:64px;padding-bottom:56px}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#ffd97a;font-size:.76rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border-radius:999px}
-.hero h1{color:#fff;font-size:clamp(2rem,4.4vw,3.3rem);font-weight:800;margin:20px 0 12px}
+.hero h1{color:#fff;font-size:clamp(2rem,4.4vw,3.3rem);font-weight:800;margin:20px 0 12px;text-wrap:balance}
 .hero h1 .hl{color:var(--amber)}
-.hero p.lead{color:#d6e8f5;max-width:33rem}
+.hero p.lead{color:#D9E4FC;max-width:33rem}
 .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
 .hero-points{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
-.hero-points span{display:inline-flex;gap:7px;align-items:center;font-size:.85rem;font-weight:600;color:#e8f2f9;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:7px 13px;border-radius:999px}
+.hero-points span{display:inline-flex;gap:7px;align-items:center;font-size:.85rem;font-weight:600;color:#EDF1FD;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:7px 13px;border-radius:999px}
 .hero-points svg{width:15px;height:15px;color:var(--amber)}
 .hero-card{background:#fff;color:var(--ink);border-radius:22px;box-shadow:var(--shadow-lg);padding:26px}
 .hero-card h3{font-size:1.05rem;font-weight:800;margin-bottom:4px}
@@ -130,7 +130,7 @@ section.alt{background:#fff}
 .sec-head{max-width:720px;margin-bottom:38px}
 .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
 .kicker{color:var(--amber-dark);font-weight:800;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase}
-.sec-head h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;margin:8px 0 10px}
+.sec-head h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;margin:8px 0 10px;text-wrap:balance}
 .sec-head p{color:var(--muted)}
 
 /* Program */
@@ -157,7 +157,7 @@ section.alt{background:#fff}
 .tab-panel p{color:var(--muted);font-size:.95rem;max-width:46rem}
 
 /* Statistik */
-.stats-band{background:var(--navy-dark);border-radius:22px;padding:38px 30px;display:grid;grid-template-columns:repeat(4,1fr);gap:26px;color:#d6e8f5;box-shadow:var(--shadow-lg)}
+.stats-band{background:var(--navy-dark);border-radius:22px;padding:38px 30px;display:grid;grid-template-columns:repeat(4,1fr);gap:26px;color:#D9E4FC;box-shadow:var(--shadow-lg)}
 .stats-band .st b{display:block;color:#fff;font-size:2rem;font-weight:800;line-height:1.1}
 .stats-band .st span{font-size:.85rem;font-weight:600}
 .stats-band .st .u{color:var(--amber)}
@@ -196,18 +196,18 @@ section.alt{background:#fff}
 /* CTA band */
 .cta-band{background:var(--navy);border-radius:22px;padding:42px 34px;display:flex;gap:26px;align-items:center;justify-content:space-between;flex-wrap:wrap;box-shadow:var(--shadow-lg)}
 .cta-band h2{color:#fff;font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:800}
-.cta-band p{color:#d6e8f5;margin-top:6px}
+.cta-band p{color:#D9E4FC;margin-top:6px}
 
 /* Footer */
-footer.site{background:var(--navy-dark);color:#c3d9ea}
+footer.site{background:var(--navy-dark);color:#C7D6F7}
 footer.site .wrap{padding-top:54px;padding-bottom:26px}
 .foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.1fr;gap:34px}
 footer.site h4{color:#fff;font-size:.95rem;margin-bottom:14px}
-footer.site a{color:#c3d9ea;font-size:.9rem}
+footer.site a{color:#C7D6F7;font-size:.9rem}
 footer.site a:hover{color:#fff}
 footer.site ul{list-style:none;display:grid;gap:9px}
 footer.site p{font-size:.9rem}
-.foot-bottom{border-top:1px solid rgba(255,255,255,.16);margin-top:38px;padding-top:20px;display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between;font-size:.83rem;color:#9dbdd6}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.16);margin-top:38px;padding-top:20px;display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between;font-size:.83rem;color:#A9BEEA}
 
 /* Bottom bar HP */
 .bottombar{display:none}
@@ -226,10 +226,10 @@ footer.site p{font-size:.9rem}
   .grid-3,.grid-2,.contact-grid,.steps{grid-template-columns:1fr}
   .stats-band{grid-template-columns:repeat(2,1fr);padding:28px 22px}
   .tab-panel.active{grid-template-columns:1fr}
-  .brand img.logo-img{height:42px}
+  .brand img.mark-img{height:42px;width:42px}
   .brand-text b{font-size:1.12rem}
   body{padding-bottom:64px}
-  .bottombar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(15,76,129,.1)}
+  .bottombar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(9,63,180,.1)}
   .bottombar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:9px 4px 10px;font-size:.7rem;font-weight:700;color:var(--muted)}
   .bottombar a svg{width:21px;height:21px}
   .bottombar a.primary{color:var(--navy)}
@@ -256,7 +256,8 @@ footer.site p{font-size:.9rem}
 <header class="site">
   <div class="wrap">
     <a class="brand" href="#beranda" aria-label="LKP Gazebo English Course">
-      <img class="logo-img" src="assets/logo-color.svg" alt="Logo LKP Gazebo English Course" width="157" height="49">
+      <img class="mark-img" src="assets/icon-mark.svg" alt="" width="48" height="48">
+      <span class="brand-text"><b>GAZEBO</b><span>English Course · Trenggalek</span></span>
     </a>
     <nav class="main" aria-label="Menu utama">
       <a href="#beranda">Beranda</a>
@@ -538,7 +539,8 @@ footer.site p{font-size:.9rem}
     <div class="foot-grid">
       <div>
         <a class="brand" href="#beranda" style="margin-bottom:14px">
-          <img class="logo-img light" src="assets/logo-white.svg" alt="Logo LKP Gazebo English Course" width="157" height="49">
+          <img class="mark-img" src="assets/icon-white.svg" alt="" width="48" height="48">
+          <span class="brand-text" style="color:#fff"><b>GAZEBO</b><span style="color:#A9BEEA">English Course · Trenggalek</span></span>
         </a>
         <div class="social-row">
           <a class="soc" href="https://www.instagram.com/gazeboenglishcourse" target="_blank" rel="noopener" aria-label="Instagram Gazebo English Course"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
