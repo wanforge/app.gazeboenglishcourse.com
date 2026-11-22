@@ -1,4 +1,4 @@
-var CACHE = 'gazebo-v6';
+var CACHE = 'gazebo-v7';
 var PRECACHE = [
   '.',
   'index.html',
